@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { NavLink } from 'react-router'
 import Button from '../Button/Button'
 
 const Header = () => {
@@ -10,13 +10,13 @@ const Header = () => {
               </div>
             <nav className='flex gap-[10px] relative right-[13%] list-none'>
                 <li className='text-[#000000] font-[500] text-[20px]'>
-                    <Link to='/'>Home</Link>
+                    <NavLink to='/'>Home</NavLink>
                 </li>
                 <li className='text-[#000000]  font-[500] text-[20px]'>
-                    <Link to='/about'>About</Link>
+                    <NavLink to='/about'>About</NavLink>
                 </li>
                 <li className='text-[#000000]  font-[500] text-[20px]'>
-                    <Link to='/article'>Article</Link>
+                    <NavLink to='/article'>Article</NavLink>
                 </li>
                <Button position="relative" left="left-[10px]"/>
             </nav>
